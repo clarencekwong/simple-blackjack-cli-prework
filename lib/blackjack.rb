@@ -47,9 +47,11 @@ def hit?
     card_total += card3
     display_card_total(card_total)
   elsif action == 's' do
-    break
+    display_card_total(card_total)
   else 
     invalid_command
+    prompt_user
+  end
 end
 
 def invalid_command
