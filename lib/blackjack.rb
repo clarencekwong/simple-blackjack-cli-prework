@@ -1,3 +1,5 @@
+card_total = 0
+
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -40,7 +42,14 @@ def hit?
   # code hit? here
   prompt_user
   action = get_user_input
-  
+  if action == 'h' do
+    card3 = deal_card
+    card_total += card3
+    display_card_total(card_total)
+  elsif action == 's' do
+    break
+  else 
+    
 end
 
 def invalid_command
