@@ -49,7 +49,7 @@ def hit?
   elsif action == 's' do
     break
   else 
-    
+    invalid_command
 end
 
 def invalid_command
