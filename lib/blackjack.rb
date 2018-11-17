@@ -50,12 +50,13 @@ def hit?
     display_card_total(card_total)
   else 
     invalid_command
-    prompt_user
   end
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
 end
 
 #####################################################
