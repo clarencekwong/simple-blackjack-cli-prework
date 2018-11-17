@@ -42,11 +42,11 @@ def hit?
   # code hit? here
   prompt_user
   action = get_user_input
-  if action == 'h' do
+  if action == 'h'
     card3 = deal_card
     card_total += card3
     display_card_total(card_total)
-  elsif action == 's' do
+  elsif action == 's'
     display_card_total(card_total)
   else 
     invalid_command
