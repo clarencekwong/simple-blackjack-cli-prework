@@ -39,13 +39,13 @@ def initial_round
   return card_total
 end
 
-def hit?
+def hit?(card_total)
   # code hit? here
   prompt_user
   action = get_user_input
   if action == 'h'
-    card3 = deal_card
-    card_total = initial_round + card3
+    card = deal_card
+    card_total = initial_round + card
     display_card_total(card_total)
     return card_total
   elsif action == 's'
