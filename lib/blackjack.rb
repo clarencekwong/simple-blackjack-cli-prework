@@ -47,8 +47,10 @@ def hit?
     card3 = deal_card
     card_total = initial_round + card3
     display_card_total(card_total)
+    return card_total
   elsif action == 's'
     display_card_total(card_total)
+    return card_total
   else 
     invalid_command
   end
