@@ -45,7 +45,7 @@ def hit?(card_total)
   action = get_user_input
   if action == 'h'
     card = deal_card
-    card_total = initial_round + card
+    card_total = card_total + card
     return card_total
   elsif action == 's'
     return card_total
